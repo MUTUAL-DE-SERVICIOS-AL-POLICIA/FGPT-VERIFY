@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="DermalogMultiScannerDemo">
+</Property><Property Name="Archivo de la solución" Value="D:\_ad_PVT\_ae_escaner\_aa_app\escaner\DermalogMultiScannerDemo.sln">
+</Property><Property Name="Date" Value="Tuesday, October 22, 2019">
+</Property><Property Name="Time" Value="16:27:14 PM">
+</Property></Properties><Event ErrorLevel="0" Project="DermalogMultiScannerDemo" Source="DermalogMultiScannerDemo.csproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="DermalogMultiScannerDemo" Source="DermalogMultiScannerDemo.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DermalogMultiScannerDemo" Source="app.config" Description="Archivo convertido correctamente. Se quitaron todas las etiquetas &lt;supportedRuntime&gt; y &lt;requiredRuntime&gt; para habilitar el proyecto para que se pueda generar y ejecutar con Visual Studio 2005.">
+</Event><Event ErrorLevel="3" Project="DermalogMultiScannerDemo" Source="app.config" Description="Converted">
+</Event></UpgradeLog>

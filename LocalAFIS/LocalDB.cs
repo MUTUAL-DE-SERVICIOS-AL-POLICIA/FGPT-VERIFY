@@ -31,8 +31,8 @@ namespace DermalogMultiScannerDemo
             sw.Write(localUser.Name);
             sw.Flush();
             sw.Close();
-            
 
+            /* ::CODE REPLACED
             for (int i = 0; i < localUser.Fingerprints.Count; i++)
             {
                 String templateString = String.Format("template{0}.dat",
@@ -44,6 +44,38 @@ namespace DermalogMultiScannerDemo
                 fs.Flush();
                 fs.Close();
             }
+            */
+
+            /* ::NEW CODE */
+            for (int i = 0; i < localUser.Fingerprints.Count; i++)
+            {
+
+
+                String templateString = String.Format("template{0}.dat",
+                        localUser.Fingerprints[i].Position.ToString("D2"));
+                String templatePath = Path.Combine(idPath, templateString);
+                FileStream fs = File.Create(templatePath);
+                byte[] data = localUser.Fingerprints[i].Template.GetData();
+                fs.Write(data, 0, data.Length);
+                fs.Flush();
+                fs.Close();
+                using (Dermalog.Afis.ImageContainer.RawImage rawImage = Dermalog.Afis.ImageContainer.RawImageHelperForms.FromBitmap(localUser.Fingerprints[i].Image as System.Drawing.Bitmap))
+                {
+                    using (Dermalog.Afis.ImageContainer.Encoder encoder = new Dermalog.Afis.ImageContainer.EncoderWsq())
+                    {
+                        String wsqString = String.Format("image{0}.wsq", localUser.Fingerprints[i].Position.ToString("D2"));
+                        String wsqPath = Path.Combine(idPath, wsqString);
+                        fs = File.Create(wsqPath);
+                        byte[] wsqData = encoder.Encode(rawImage);
+                        fs.Write(wsqData, 0, wsqData.Length);
+                        fs.Flush();
+                        fs.Close();
+                    }
+                }
+            }
+
+
+
         }
 
         public static Dictionary<long, LocalUser> convertFoldersToUserList()

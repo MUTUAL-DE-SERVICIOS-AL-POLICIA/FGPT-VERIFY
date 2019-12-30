@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <items>
+   <users>
+     <user id="127">ADMIN</user>
+     <user id="122">JORGE BARRIOS</user>
+     <user id="124">ADRIANA QUISBERT</user>
+     <user id="42">VANESSA LUNA</user>
+     <user id="13">GONZALO QUISPE</user>
+	 <user id="13">ROLANDO FERNANDEZ</user>
+   </users>
+   <selected>
+ADMIN
+   </selected>
+   <pathlocal>
+   D:\\biometrico
+   </pathlocal>
+   <url>
+   http://192.168.2.91
+   </url>
+</items>

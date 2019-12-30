@@ -1,0 +1,7 @@
+*.b1s
+obj/
+*.suo
+bin/x86/Debug/DermalogMultiScannerDemo.exe
+bin/x86/Debug/DermalogMultiScannerDemo.pdb
+bin/x64/Debug/DermalogMultiScannerDemo.exe
+bin/x64/Debug/DermalogMultiScannerDemo.pdb

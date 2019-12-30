@@ -155,10 +155,10 @@ namespace DermalogMultiScannerDemo
             return filtered;
         }
 
-        /// <summary>
-        /// Get all Devices of current Frame-Grabber
-        /// </summary>
-        /// <returns></returns>
+        ///<summary>
+        ///Get all Devices of current Frame-Grabber
+        ///</summary>
+        ///<returns></returns>
         public static DeviceInformations[] GetAttachedDevices(DeviceIdentity id)
         {
             return DeviceManager.GetAttachedDevices(id);

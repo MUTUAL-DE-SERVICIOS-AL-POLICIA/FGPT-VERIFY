@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Dermalog.Afis.FingerCode3;
+using System.IO;
+using System.Windows;
 
 namespace DermalogMultiScannerDemo
 {
@@ -95,6 +97,60 @@ namespace DermalogMultiScannerDemo
 
             return result;
         }
+
+
+
+
+
+        public AFISVerificationResult muserpol_verifyUser(long userId, List<Fingerprint> fingerprints, int threshold, MainWindow o)
+        {
+
+//M3
+
+
+            AFISVerificationResult result = new AFISVerificationResult();
+            double dMaxScore = 0.0;
+
+            
+            if (!o.m_existFingerRegistry)
+            {
+
+                result.Score = 0;
+                result.Hit = false;
+                return result;
+            }
+
+
+         Dermalog.Afis.FingerCode3.Matcher matcher = new Dermalog.Afis.FingerCode3.Matcher();
+
+
+
+         foreach (var f_template in o.m_fingers)
+            {
+
+                for (int j = 0; j < fingerprints.Count; j++)
+                {
+                    double dScore = new Matcher().Match(f_template, fingerprints[j].Template);
+                    //double dScore = matcher.Match(f_template, fingerprints[j].Template);
+
+                    if (dScore > threshold && dScore > dMaxScore)
+                    {
+                        dMaxScore = dScore;
+                        result.Score = dMaxScore;
+                        result.Hit = true;
+                    }
+                }
+            }
+
+
+
+
+
+            return result;
+        }
+
+
+
         #endregion
     }
 

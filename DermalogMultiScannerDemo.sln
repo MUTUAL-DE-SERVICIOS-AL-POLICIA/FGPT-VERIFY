@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DermalogMultiScannerDemo", "DermalogMultiScannerDemo.csproj", "{770D4D0D-52FE-4178-8594-C838CAAE5AD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "master", "master\master.csproj", "{298801D1-F299-41BF-95E0-D6ED918F20DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+		x86|Any CPU = x86|Any CPU
+		x86|x86 = x86|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{770D4D0D-52FE-4178-8594-C838CAAE5AD4}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{770D4D0D-52FE-4178-8594-C838CAAE5AD4}.Debug|Any CPU.Build.0 = Debug|x86
+		{770D4D0D-52FE-4178-8594-C838CAAE5AD4}.Debug|x86.ActiveCfg = Debug|x86
+		{770D4D0D-52FE-4178-8594-C838CAAE5AD4}.Debug|x86.Build.0 = Debug|x86
+		{770D4D0D-52FE-4178-8594-C838CAAE5AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{770D4D0D-52FE-4178-8594-C838CAAE5AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{770D4D0D-52FE-4178-8594-C838CAAE5AD4}.Release|x86.ActiveCfg = Release|x86
+		{770D4D0D-52FE-4178-8594-C838CAAE5AD4}.Release|x86.Build.0 = Release|x86
+		{770D4D0D-52FE-4178-8594-C838CAAE5AD4}.x86|Any CPU.ActiveCfg = x86|x86
+		{770D4D0D-52FE-4178-8594-C838CAAE5AD4}.x86|Any CPU.Build.0 = x86|x86
+		{770D4D0D-52FE-4178-8594-C838CAAE5AD4}.x86|x86.ActiveCfg = x86|x86
+		{770D4D0D-52FE-4178-8594-C838CAAE5AD4}.x86|x86.Build.0 = x86|x86
+		{298801D1-F299-41BF-95E0-D6ED918F20DC}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{298801D1-F299-41BF-95E0-D6ED918F20DC}.Debug|x86.ActiveCfg = Debug|x86
+		{298801D1-F299-41BF-95E0-D6ED918F20DC}.Debug|x86.Build.0 = Debug|x86
+		{298801D1-F299-41BF-95E0-D6ED918F20DC}.Release|Any CPU.ActiveCfg = Release|x86
+		{298801D1-F299-41BF-95E0-D6ED918F20DC}.Release|x86.ActiveCfg = Release|x86
+		{298801D1-F299-41BF-95E0-D6ED918F20DC}.Release|x86.Build.0 = Release|x86
+		{298801D1-F299-41BF-95E0-D6ED918F20DC}.x86|Any CPU.ActiveCfg = Release|x86
+		{298801D1-F299-41BF-95E0-D6ED918F20DC}.x86|x86.ActiveCfg = Release|x86
+		{298801D1-F299-41BF-95E0-D6ED918F20DC}.x86|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
